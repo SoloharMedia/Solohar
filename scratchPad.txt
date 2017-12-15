@@ -1,0 +1,413 @@
+<p id="about-text-left">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+	but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+	and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p id="about-text-left">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+	but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+	and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+
+Bringing ideas to life by creating interactive web and mobile experiences
+
+<p id="quote-creative">"When all think alike, then no one is thinking"<br><br><span id="float-right-quote">— Walter Lippman</span></p>
+
+
+
+<div id="cover-square-row-one"></div>
+<div id="cover-square-row-two"></div>
+<div id="cover-square-row-three"></div>
+<div id="cover-square-row-four"></div>
+<div id="cover-square-row-five"></div>
+<div id="cover-square-row-six"></div>
+<div id="cover-square-row-seven"></div>
+<div id="cover-square-row-eight"></div>
+<div id="cover-square-row-nine"></div>
+<div id="cover-square-row-ten"></div>
+<div id="cover-square-row-eleven"></div>
+<div id="cover-square-row-twelve"></div>
+<div id="cover-square-row-thirteen"></div>
+<div id="cover-square-row-fourteen"></div>
+<div id="cover-square-row-fifteen"></div>
+<div id="cover-square-row-sixteen"></div>
+<div id="cover-square-row-seventeen"></div>
+<div id="cover-square-row-eighteen"></div>
+<div id="cover-square-row-nineteen"></div>
+<div id="cover-square-row-twenty"></div>
+
+#cover-square-row-one {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-two {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-three {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-four {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-five {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-six {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-seven {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-eight {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-nine {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-ten {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-eleven {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-twelve {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-thirteen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-fourteen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-fifteen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-sixteen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-seventeen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-eighteen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-ninteen {
+	height: 5%;
+	width: 100%;
+}
+#cover-square-row-twenty {
+	height: 5%;
+	width: 100%;
+}
+
+
+
+
+////////////////////////////////////////////////
+//              STAFF IMAGE MASK              //
+////////////////////////////////////////////////
+var row10Counter = 10;
+var row9Counter = 10;
+var row8Counter = 10;
+var row7Counter = 10;
+var row6Counter = 10;
+var row5Counter = 10;
+var row4Counter = 10;
+var row3Counter = 10;
+var row2Counter = 10;
+var row1Counter = 10;
+
+$('.cover-square').mouseenter(function() {
+	setTimeout(setRow10, 100);
+	setTimeout(setRow9, 200);
+	setTimeout(setRow8, 400);
+	setTimeout(setRow7, 600);
+	setTimeout(setRow6, 800);
+	setTimeout(setRow5, 1000);
+	setTimeout(setRow4, 1200);
+	setTimeout(setRow3, 1400);
+	setTimeout(setRow2, 1600);
+	setTimeout(setRow1, 1800);
+});
+function setRow10() {
+	if(row10Counter > 0){
+		$('#cover-square-row-ten div:nth-child(' + parseInt(row10Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-ten div:nth-child(' + parseInt(row10Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-ten div:nth-child(' + parseInt(row10Counter) + ')').fadeOut(200);
+		row10Counter--;
+		setTimeout(setRow10, 100);
+	}
+}
+function setRow9() {
+	if(row9Counter > 0){
+		$('#cover-square-row-nine div:nth-child(' + parseInt(row9Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-nine div:nth-child(' + parseInt(row9Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-nine div:nth-child(' + parseInt(row9Counter) + ')').fadeOut(200);
+		row9Counter--;
+		setTimeout(setRow9, 100);
+	}
+}
+function setRow8() {
+	if(row8Counter > 0){
+		$('#cover-square-row-eight div:nth-child(' + parseInt(row8Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-eight div:nth-child(' + parseInt(row8Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-eight div:nth-child(' + parseInt(row8Counter) + ')').fadeOut(200);
+		row8Counter--;
+		setTimeout(setRow8, 100);
+	}
+}
+function setRow7() {
+	if(row7Counter > 0){
+		$('#cover-square-row-seven div:nth-child(' + parseInt(row7Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-seven div:nth-child(' + parseInt(row7Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-seven div:nth-child(' + parseInt(row7Counter) + ')').fadeOut(200);
+		row7Counter--;
+		setTimeout(setRow7, 100);
+	}
+}
+function setRow6() {
+	if(row6Counter > 0){
+		$('#cover-square-row-six div:nth-child(' + parseInt(row6Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-six div:nth-child(' + parseInt(row6Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-six div:nth-child(' + parseInt(row6Counter) + ')').fadeOut(200);
+		row6Counter--;
+		setTimeout(setRow6, 100);
+	}
+}
+function setRow5() {
+	if(row5Counter > 0){
+		$('#cover-square-row-five div:nth-child(' + parseInt(row5Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-five div:nth-child(' + parseInt(row5Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-five div:nth-child(' + parseInt(row5Counter) + ')').fadeOut(200);
+		row5Counter--;
+		setTimeout(setRow5, 100);
+	}
+}
+function setRow4() {
+	if(row4Counter > 0){
+		$('#cover-square-row-four div:nth-child(' + parseInt(row4Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-four div:nth-child(' + parseInt(row4Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-four div:nth-child(' + parseInt(row4Counter) + ')').fadeOut(200);
+		row4Counter--;
+		setTimeout(setRow4, 100);
+	}
+}
+function setRow3() {
+	if(row3Counter > 0){
+		$('#cover-square-row-three div:nth-child(' + parseInt(row3Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-three div:nth-child(' + parseInt(row3Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-three div:nth-child(' + parseInt(row3Counter) + ')').fadeOut(200);
+		row3Counter--;
+		setTimeout(setRow3, 100);
+	}
+}
+function setRow2() {
+	if(row2Counter > 0){
+		$('#cover-square-row-two div:nth-child(' + parseInt(row2Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-two div:nth-child(' + parseInt(row2Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-two div:nth-child(' + parseInt(row2Counter) + ')').fadeOut(200);
+		row2Counter--;
+		setTimeout(setRow2, 100);
+	}
+}
+function setRow1() {
+	if(row1Counter > 0){
+		$('#cover-square-row-one div:nth-child(' + parseInt(row1Counter) + ')').css({
+			'transform' : 'rotateX(-180deg)'
+		});
+		$('#cover-square-row-one div:nth-child(' + parseInt(row1Counter) + ')').animate({
+			'bottom' : '200px'
+		}, 200, 'swing');
+		$('#cover-square-row-one div:nth-child(' + parseInt(row1Counter) + ')').fadeOut(200);
+		row1Counter--;
+		setTimeout(setRow1, 100);
+	}
+}
+
+
+
+
+
+
+
+
+<!--<div id="staff-picture-cover">
+						<div id="cover-square-row-one" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-two" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-three" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-four" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-five" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-six" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-seven" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-eight" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-nine" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						<div id="cover-square-row-ten" class="cover-square-row">
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+							<div class="cover-square"></div>
+						</div>
+						</div>-->
+
+
